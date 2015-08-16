@@ -5,6 +5,6 @@ class StaticPagesController < ApplicationController
   def create
   end
 
- # def app/controllers/static_pages_controller.rb
+ #def app/controllers/static_pages_controller.rb
   #end
 end
