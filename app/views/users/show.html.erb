@@ -1,4 +1,16 @@
 <h1>
   <%= gravatar_for @user %>
   <%= @user.name %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Your Profile
+    </div>
+        Name:<%= @user.name %>
+        <br>
+        Email:<%= @user.email %>
+        <br>
+        Age:<%= @user.age %>
+        <br>
+        <%= link_to "Edit Your Profile", edit_user_path %>
+  </div>
 </h1>

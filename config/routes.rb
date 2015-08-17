@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 
-  resources :sessions, only: [:new, :create, :destroy, :edit, :update]
+  resources :sessions, only: [:new, :create, :destroy]
   resources :users
 end
