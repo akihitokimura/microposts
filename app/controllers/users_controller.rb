@@ -30,6 +30,9 @@ before_action :set_user, only:[:show, :edit, :update]
       render 'edit'
     end
   end
+  
+  
+  
 
   private
 
