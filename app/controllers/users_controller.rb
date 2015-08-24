@@ -31,6 +31,18 @@ before_action :set_user, only:[:show, :edit, :update]
     end
   end
   
+  def following
+    @user = User.find(params[:id])
+    @following_users = @user.following_users
+
+  end
+
+  def follower
+    @user = User.find(params[:id])
+    @follower_users = @user.follower_users
+
+  end
+  
   
   
 
@@ -44,5 +56,6 @@ before_action :set_user, only:[:show, :edit, :update]
   def set_user
   @user = User.find(params[:id])
   end
+  
 end
 
