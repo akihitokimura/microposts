@@ -14,8 +14,6 @@ Rails.application.routes.draw do
     end
   end
   
-  get :following, to: "users#following"
-  
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts
   resources :relationships, only: [:create, :destroy]
