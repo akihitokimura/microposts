@@ -1,0 +1,21 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section　class="user_info">
+      <h1>
+      <%= gravatar_for @user %>
+      <%= @user.name %>
+      </h1>
+      <span><%= link_to "view my profile", current_user %></span>
+    </section>
+  </aside>
+
+    <section>
+      <% if @follower_users.any? %>
+        <div class="user_avatars">
+          <% @follower_users.each do |follower_user| %>
+            <%= following_user.name %>
+          <% end %>
+        </div>
+      <% end %>
+    </section>
+</div>
